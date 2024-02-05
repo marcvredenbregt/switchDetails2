@@ -5,6 +5,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
     color: darkgrey;
     flex-direction: column;
+    overflow: auto;
 }
 
 .container {
@@ -40,6 +41,16 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+.table {
+    border: 1px solid #ddd; /* Add border around the table */
+    border-collapse: collapse; /* Collapse borders into a single border for adjacent cells */
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd; /* Add border to table cells */
+    padding: 8px; /* Add padding for better readability */
+  }
 
 .card {
     width: 300px;
