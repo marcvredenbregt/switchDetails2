@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+    color: darkgrey;
+    flex-direction: column;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar {
+    width: 100%;
+    position: sticky;
+    background-color: lightgray;
+    box-shadow: rgb(0 0 0 / 12%) 0 1px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 35px;
+    width: 150px;
+    background-size: 150px;
+    background-image: url('images/logo_displaybooster.svg');
+    margin: 20px;
+    background-repeat: no-repeat;
+}
+
+.title {
+    margin: 20px;
+}
+
+.message {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: rgb(0 0 0 / 12%) 0 1px 8px;
+}
+
+.footer {
+    width: 100%;
+    background-color: white;
+    position:absolute;
+    bottom:0;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
