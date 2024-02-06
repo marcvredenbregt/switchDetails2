@@ -46,11 +46,38 @@ body {
     border: 1px solid #ddd; /* Add border around the table */
     border-collapse: collapse; /* Collapse borders into a single border for adjacent cells */
   }
-  
-  .table th, .table td {
+.table th, .table td {
     border: 1px solid #ddd; /* Add border to table cells */
     padding: 8px; /* Add padding for better readability */
   }
+
+.sortable th {
+    cursor: pointer;
+ }
+ .sortable th.no-sort {
+    pointer-events: none;
+ }
+ .sortable th::after, 
+ .sortable th::before {
+    transition: color 0.2s ease-in-out;
+    font-size: 1.2em;
+    color: transparent;
+ }
+ .sortable th::after {
+    margin-left: 3px;
+    content: '\025B8';
+ }
+ .sortable th:hover::after {
+    color: inherit;
+ }
+ .sortable th.dir-d::after {
+    color: inherit;
+    content: '\025BE';
+ }
+ .sortable th.dir-u::after {
+    color: inherit;
+    content: '\025B4';
+ }
 
 .card {
     width: 300px;
