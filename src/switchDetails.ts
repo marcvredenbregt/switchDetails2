@@ -16,7 +16,7 @@ function handleFileSelect() {
         try {
             const switchData = JSON.parse((e.target as FileReader).result as string)
             message.innerHTML = '<br>'
-            const createNew = new createTable()
+            const createNew = new CreateTable()
             createNew.createTable(switchData)
             console.log('File content as JSON:', switchData)
         } catch (error) {
@@ -57,7 +57,7 @@ interface switchDetail {
     };
 }
 
-class createTable {
+class CreateTable {
 
     constructor() {
     }
